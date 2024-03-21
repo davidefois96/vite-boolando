@@ -1,0 +1,59 @@
+
+@import "@fontsource/roboto/index.css";
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+img{max-width: 100%;}
+
+
+.flexing{
+  display: flex;
+}
+
+
+
+.container{
+
+  display: flex;
+  width: 80%;
+  margin: auto;
+  
+}
+
+a {
+  
+  color: white; 
+  font-size: medium;
+
+  &:hover{color:gray};
+
+  &.right {margin-right:  10px};
+
+  &.left{margin-left:  10px};
+
+}
+
+
+#resize-logo{
+  height: 10%;
+  width: 10%;
+ 
+}
+
+
+#discount-right{left: 13%;}
+
+
+#spc-between{justify-content: space-between;}
+
+
+
