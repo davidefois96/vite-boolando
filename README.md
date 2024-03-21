@@ -1,7 +1,11 @@
-# Vue 3 + Vite
+VITE-BOOLANDO
+===
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Recommended IDE Setup
+## Descrizione
+Creare un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necessari per strutturare il layout.
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+L’esercizio deriva da html-css-boolando ma la sfida è suddividerlo in componenti e provare a sfruttare SASS per rendere il nostro stile più leggibile e flessibile
+ 
+## Bonus
+Popoliamo le voci dell’header (sia le tre voci testuali che le tre icone) dinamicamente.
