@@ -1,30 +1,11 @@
 <script>
 
-  import card from "./Card.vue";
-  
-  import Products from "./assets/data/db.js";
-
-
   export default {
 
-    components:{
-
-      card,
-      
-
-    },
+    
     data(){
 
   
-
-      return{
-
-        Products,
-
-      }
-
-
-
     },
 
     
@@ -34,17 +15,7 @@
 
 <template>
 
-<main class="container flexing">
-
-<card 
- v-for="(product,index) in products"
-
-/>
-
-
-
-</main>
-
+<main>ciao</main>
   
 </template>
 
@@ -54,6 +25,7 @@
 main{
   padding-top: 150px;
   padding-bottom: 30px;
+  height: 300px;
 }
 
 

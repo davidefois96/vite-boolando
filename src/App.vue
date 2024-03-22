@@ -3,9 +3,10 @@
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
+import products from "./assets/data/db.js"
 
 
-import Products from "./assets/data/db.js";
+
 
 export default{
 
@@ -20,14 +21,16 @@ components:{
 
 data(){
 
-  
-
   return{
 
-    Products,
+    products,
+
 
   }
 
+  
+
+  
 
 
 },
@@ -38,6 +41,8 @@ methods:{
 },
 
 mounted(){
+
+  console.log(this.products);
 
 
 
