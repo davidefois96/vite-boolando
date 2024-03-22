@@ -9,8 +9,8 @@
       price: Number,
       name: String,
       badges: Array,
-      cardId: Number
-
+      cardId: Number,
+      isInFavorites: Boolean
 
     },
     data(){
@@ -37,30 +37,25 @@
       <img :src="`/assets/img/${img}`" alt="">
       <img class="hovered" :src="`/assets/img/${imgSecond}`" :alt="cardId">
 
-
-
-      <div class="heart">&#9829</div>
+      <div class="heart" :class="{'isInFavorites': isInFavorites}">&#9829</div>
 
       <div class="badgesContainer">
 
-        <span v-for="(badge,index) in badges" :class="badge.type">
+        <span v-for="(badge,index) in badges" :class="badge.type" :key="index">
 
           {{ badge.value }}
-
+          
         </span>
-        
 
       </div>
 
-      
     </div>
 
     
-
     <p>
       {{ brand }} <br>
       <strong>{{ name }}</strong><br>
-      <span><strong class="redtext">{{price}}&#8364</strong></span>
+      <span><strong class="redtext">{{price}} &#8364</strong></span>
       <span class="crossed-out">29.99 &#8364</span>
       
     </p>
@@ -69,9 +64,6 @@
   </div>  
 
     
-    
-
-  
 </template>
 
 
@@ -104,12 +96,11 @@
     top: 3%;
     font-size: 2rem;
 
-    &:hover{
-      color: red;
-
-
+    &.isInFavorites{
+    color: red;
     }
 
+    
 
   }
 
@@ -161,5 +152,6 @@ div.figure p {
  left: 0;
 
 }
+
 
 </style>

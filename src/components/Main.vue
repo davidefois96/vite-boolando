@@ -38,7 +38,7 @@ import Card from "../components/Card.vue";
 
 <main class="container flexing">
 
-  <Card v-for="(product,index) in products"
+  <Card v-for="(product) in products"
   :img="product.frontImage"
   :imgSecond="product.backImage"
   :brand="product.brand"
@@ -46,11 +46,9 @@ import Card from "../components/Card.vue";
   :name="product.name"
   :badges="product.badges"
   :cardId="product.id"
+  :isInFavorites="product.isInFavorites"
 
   />
-
-
-
 
 </main>
 
@@ -74,8 +72,6 @@ main.container{
   gap: 1%;
   flex-wrap: wrap;
  
-  
-
 }
 
 </style>
