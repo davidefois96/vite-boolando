@@ -41,8 +41,12 @@ import Card from "../components/Card.vue";
   <Card v-for="(product,index) in products"
   :img="product.frontImage"
   :imgSecond="product.backImage"
-  
-  
+  :brand="product.brand"
+  :price="product.price"
+  :name="product.name"
+  :badges="product.badges"
+  :cardId="product.id"
+
   />
 
 
