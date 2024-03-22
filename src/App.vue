@@ -4,6 +4,9 @@ import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 
+
+import Products from "./assets/data/db.js";
+
 export default{
 
 components:{
@@ -21,7 +24,7 @@ data(){
 
   return{
 
-
+    Products,
 
   }
 
